@@ -2,7 +2,7 @@
 Api Blog application built wit NodeJs Express and Mongoose, project far from finished.
 
 # Play with the models
-``js
+```js
 db.comments.count({replies: {$exists: true, $not: {$size: 0}}})
 db.post.find({'author.$id': 'foo'})
 db.users.count({roles: {$exists: true, $in: [ObjectId('5c00ff848e15881074f622f6')]}})
